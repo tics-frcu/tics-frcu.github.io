@@ -1,0 +1,6 @@
+#Archivos de proyecto de Intellij IDEA
+*.iml
+.idea/*
+!.idea/codeStyleSettings.xml
+#.idea/tasks.xml
+#.idea/workspace.xml

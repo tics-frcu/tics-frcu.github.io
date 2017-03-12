@@ -1,0 +1,17 @@
+Instalacion de docker en Ubuntu / Mint
+
+- sudo apt-get update
+- sudo apt-get install wget curl linux-image-extra-$(uname -r) linux-image-extra-virtual
+- wget -qO- https://get.docker.com/ | sh
+- sudo usermod -aG docker $USER
+
+Salir y volver a loguearse
+
+Para probar que docker está instalado y funcionando ejecutar:
+- docker run hello-world
+
+
+Descargar las imagenes a usar en el práctico:
+- docker pull ubuntu:14.04
+- docker pull nginx:1.9
+- docker pull turnkeylinux/lamp-14.1

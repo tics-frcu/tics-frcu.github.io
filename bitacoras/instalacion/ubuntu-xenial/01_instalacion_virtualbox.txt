@@ -1,0 +1,25 @@
+Instalar VirtualBox 5.x en Ubuntu 16.04 o Mint 18
+
+- echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
+
+- wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+
+- wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+- sudo apt-get update
+
+- sudo apt-get install virtualbox-5.1 dkms vinagre
+
+Descargar el paquete de extensiones de: http://download.virtualbox.org/virtualbox/5.1.14/Oracle_VM_VirtualBox_Extension_Pack-5.1.14-112924.vbox-extpack
+
+En virtualbox, instalar accediendo a: Archivo -> Preferencias -> Extensiones.
+Click en botón Agregar Nuevo Paquete y seleccionar el archivo descargado.
+
+Copiar los archivos:
+
+- turnkey-lamp-14.1-jessie-amd64.iso
+- turnkey-lamp-14.1-jessie-amd64.ova
+- ubuntu-16.04-server-i386.iso
+
+a la carpeta ~/consolidacion-2017
+

@@ -1,0 +1,29 @@
+Instalar vagrant en Ubuntu / Debian
+
+- mkdir vagrant
+- cd vagrant/
+- wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.deb
+- sudo dpkg -i vagrant_1.9.1_x86_64.deb
+- cd ..
+- rm -rf vagrant
+
+Instalamos paquetes para poder exportar deirectorios vía NFS
+- sudo apt-get install nfs-kernel-server nfs-common 
+
+Descargar las boxes:
+- vagrant box add phusion/ubuntu-14.04-amd64 
+  (https://oss-binaries.phusionpassenger.com/vagrant/boxes/latest/ubuntu-14.04-amd64-vbox.box)
+
+En caso de actualizar el práctico a Ubuntu 16.04 agregar esta box
+- vagrant box add ubuntu/xenial64
+  (https://atlas.hashicorp.com/ubuntu/boxes/xenial64/versions/20170209.0.0/providers/virtualbox.box)
+
+O copiar los directorios a ~/.vagrant.d/boxes
+
+
+Más boxes:
+ - https://atlas.hashicorp.com/boxes/search
+ - https://github.com/phusion/open-vagrant-boxes
+
+
+

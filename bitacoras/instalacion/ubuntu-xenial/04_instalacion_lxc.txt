@@ -1,0 +1,17 @@
+sudo apt-get update
+sudo apt-get install lxc
+
+Creamos un container ubuntu 16.04 64 bits. 
+sudo lxc-create -t download -n net1 -- --dist ubuntu --release xenial --arch amd64
+
+sudo lxc-ls
+
+sudo lxc-start -n net1
+sudo lxc-ls --fancy
+
+Agregamos usuarios mediante
+sudo lxc-attach -n net1
+
+Accedemos a la consola mediante
+sudo lxc-console -n net1
+

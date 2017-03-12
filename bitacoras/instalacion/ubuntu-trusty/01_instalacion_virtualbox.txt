@@ -3,7 +3,7 @@ Instalar VirtualBox 4.3 en Ubuntu 14.04 o Mint 17
 - sudo apt-get update
 - sudo apt-get install virtualbox virtualbox-qt virtualbox-dkms virtualbox-guest-additions-iso vinagre
 
-Descargar el paquete de extensiones de: http://download.virtualbox.org/virtualbox/5.1.14/Oracle_VM_VirtualBox_Extension_Pack-5.1.14-112924.vbox-extpack
+Descargar el paquete de extensiones de: http://download.virtualbox.org/virtualbox/4.3.18/Oracle_VM_VirtualBox_Extension_Pack-4.3.18-96516a.vbox-extpack
 
 En virtualbox, instalar accediendo a: Archivo -> Preferencias -> Extensiones.
 Click en botón Agregar Nuevo Paquete y seleccionar el archivo descargado.
@@ -15,4 +15,10 @@ Copiar los archivos:
 - ubuntu-16.04-server-i386.iso
 
 a la carpeta ~/consolidacion-2017
+
+Los mismos se pueden descargar de:
+
+https://www.turnkeylinux.org/download?file=turnkey-lamp-14.1-jessie-amd64.ova
+https://www.turnkeylinux.org/download?file=turnkey-lamp-14.1-jessie-amd64.iso
+http://releases.ubuntu.com/16.04.2/ubuntu-16.04.2-server-i386.iso
 

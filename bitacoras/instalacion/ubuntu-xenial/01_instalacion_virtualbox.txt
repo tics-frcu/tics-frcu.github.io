@@ -23,3 +23,9 @@ Copiar los archivos:
 
 a la carpeta ~/consolidacion-2017
 
+Los mismos se pueden descargar de:
+
+https://www.turnkeylinux.org/download?file=turnkey-lamp-14.1-jessie-amd64.ova
+https://www.turnkeylinux.org/download?file=turnkey-lamp-14.1-jessie-amd64.iso
+http://releases.ubuntu.com/16.04.2/ubuntu-16.04.2-server-i386.iso
+

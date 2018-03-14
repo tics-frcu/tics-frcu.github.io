@@ -1,4 +1,4 @@
-#Instalar VirtualBox 5.x en Ubuntu 16.04 o Mint 18
+# Instalar VirtualBox 5.x en Ubuntu 16.04 o Mint 18
 
 ## Instalar los paquetes necesarios
 

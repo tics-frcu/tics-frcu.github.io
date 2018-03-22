@@ -1,15 +1,15 @@
-# Instalar VirtualBox 5.x en Ubuntu 16.04 o Mint 18
+# Instalar VirtualBox 5.x en Ubuntu 14.04 o Mint 17
 
 ## Instalar los paquetes necesarios
 
 1. `echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list`
-2. `wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -`
+2. `wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -`
 3. `sudo apt-get update`
 4. `sudo apt-get install virtualbox-5.2 dkms vinagre`
 
 ## Instalar extensiones
 
-Descargar el paquete de extensiones de: [aquí](https://download.virtualbox.org/virtualbox/5.2.8/virtualbox-5.2_5.2.8-121009~Ubuntu~xenial_amd64.deb)
+Descargar el paquete de extensiones de: [aquí](https://download.virtualbox.org/virtualbox/5.2.8/Oracle_VM_VirtualBox_Extension_Pack-5.2.8.vbox-extpack)
 
 En virtualbox, instalar accediendo a: Archivo -> Preferencias -> Extensiones.
 Click en botón Agregar Nuevo Paquete y seleccionar el archivo descargado.

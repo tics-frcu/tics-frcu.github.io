@@ -1,8 +1,8 @@
-# Instalar VirtualBox 5.x en Ubuntu 14.04 o Mint 17
+# Instalar VirtualBox 5.2 en Ubuntu 14.04 o Mint 17
 
 ## Instalar los paquetes necesarios
 
-1. `echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list`
+1. `echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list`
 2. `wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -`
 3. `sudo apt-get update`
 4. `sudo apt-get install virtualbox-5.2 dkms vinagre`

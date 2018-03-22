@@ -2,10 +2,23 @@
 
 ## Instalar los paquetes necesarios
 
-1. `echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list`
-2. `wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -`
-3. `sudo apt-get update`
-4. `sudo apt-get install virtualbox-5.2 dkms vinagre`
+Ejecutar los siguientes  comandos:
+
+```
+echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
+```
+
+```
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+```
+
+```
+sudo apt-get update
+```
+
+```
+sudo apt-get install virtualbox-5.2 dkms vinagre
+```
 
 ## Instalar extensiones
 
@@ -26,7 +39,7 @@ a la carpeta `~/consolidacion-2018`
 
 Los mismos se pueden descargar de:
 
-* https://www.turnkeylinux.org/download?file=turnkey-lamp-14.2-jessie-amd64.ova
-* https://www.turnkeylinux.org/download?file=turnkey-lamp-14.2-jessie-amd64.iso
-* http://releases.ubuntu.com/16.04.2/ubuntu-16.04.4-server-i386.iso
+* [https://www.turnkeylinux.org/download?file=turnkey-lamp-14.2-jessie-amd64.ova](https://www.turnkeylinux.org/download?file=turnkey-lamp-14.2-jessie-amd64.ova)
+* [https://www.turnkeylinux.org/download?file=turnkey-lamp-14.2-jessie-amd64.iso](https://www.turnkeylinux.org/download?file=turnkey-lamp-14.2-jessie-amd64.iso)
+* [http://releases.ubuntu.com/16.04.2/ubuntu-16.04.4-server-i386.iso](http://releases.ubuntu.com/16.04.2/ubuntu-16.04.4-server-i386.iso)
 

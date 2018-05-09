@@ -4,3 +4,5 @@
 !.idea/codeStyleSettings.xml
 #.idea/tasks.xml
 #.idea/workspace.xml
+# Archivos temporales de OO
+.~*

@@ -1,0 +1,61 @@
+Ayuda:
+- man qemu-img
+- man virt-install
+- virt-install --disk=?
+- virt-install --features=?
+- virt-install --network=?
+- virt-install --graphics=?
+
+Iniciar la red KVM default
+- virsh net-autostart default
+- virsh net-start default
+- virsh net-dumpxml default
+
+Crear la imagen de disco y moverla donde la pueda leer libvirt
+qemu-img create -f qcow2 prueba1.img 10G
+sudo mv prueba1.img /var/lib/libvirt/images/
+sudo chown libvirt-qemu /var/lib/libvirt/images/prueba1.img
+
+Crear la máquina virtual
+- virt-install -n prueba1 \
+--os-type Linux --os-variant ubuntu18.04 \
+--disk path=/var/lib/libvirt/images/prueba1.img,bus=sata,format=qcow2 \
+--cdrom /shits/isos/consolidacion-2020/ubuntu-18.04.4-server-amd64.iso \
+--boot cdrom,hd  \
+--features acpi=yes,apic=yes,pae=yes \
+--memorybacking hugepages=yes \
+--network bridge=virbr0 \
+--memory 512 \
+--vcpus 1 --virt-type kvm \
+--graphics vnc,listen=0.0.0.0,port=23456 \
+--noautoconsole
+
+--
+Si da errores al usar la opción hugepages, verificar que las HugePages 
+estén habilitadas y asignadas:
+- cat /proc/meminfo | grep Huge
+--
+
+Averiguar la IP de la VM con:
+- virsh net-dhcp-leases default
+
+(Para conectarse por SSH)
+- ssh alumno@IP
+
+Apagar la máquina con:
+- virsh shutdown prueba1
+- virsh destroy prueba1
+
+Guardar/recuperar el estado de una VM
+- virsh save prueba1 prueba1-snapshot
+- virsh restore prueba1 prueba1-snapshot
+
+Pausar/reaundar una VM:
+- virsh pause prueba1 
+- virsh resume prueba1 
+
+Clonar una VM (la original debe estar apagada):
+- virt-clone --original prueba1 --auto-clone
+
+Muestra la configuración de la VM:
+- virsh dumpxml prueba1

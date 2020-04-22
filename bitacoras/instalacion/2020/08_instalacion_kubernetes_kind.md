@@ -1,4 +1,4 @@
-# Instalar cluster Kubernetes (con minikube) en Ubuntu / Mint / Debian 
+# Instalar cluster Kubernetes (con Kind) en Ubuntu / Mint / Debian 
 
 ## Requisitos previos
 
@@ -65,7 +65,11 @@ Definimos un ingress Nginx para el cluster con:
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/kind/deploy.yaml
 ```
 
+Vemos el estado del ingress con:
 
+```
+kubectl get deployments --namespace ingress-nginx
+```
 
-
+Cuando el ingress esté listo podemos verificar accediendo a http://localhost (por el momento nos dará un error 404, y que aún no hay ninguna aplicación corriendo en el cluster)
 
